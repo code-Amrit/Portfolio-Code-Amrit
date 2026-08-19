@@ -100,7 +100,7 @@ function Home() {
             <span className="flex h-9 w-9 items-center justify-center rounded-full bg-[#d8ef67] text-[#182746] transition-transform duration-300 group-hover:rotate-12">
               <span className="display text-lg font-bold">A</span>
             </span>
-            <span className="display text-lg font-semibold tracking-tight text-[#f4f0e6]">Aarav Mehta</span>
+            <span className="display text-lg font-semibold tracking-tight text-[#f4f0e6]">Amritpal Singh</span>
           </AppLink>
           <nav className={`${menuOpen ? 'flex' : 'hidden'} absolute left-0 right-0 top-[72px] flex-col gap-6 border-b border-[#33405c] bg-[#182746] px-5 py-7 md:static md:flex md:flex-row md:items-center md:gap-8 md:border-0 md:bg-transparent md:p-0`} aria-label="Primary navigation">
             <AppLink href="#work" onClick={closeMenu} className="nav-link" data-testid="link-work">Selected work</AppLink>
@@ -133,7 +133,7 @@ function Home() {
             </h1>
             <div className="mt-12 grid max-w-[800px] grid-cols-1 gap-8 md:grid-cols-[1fr_1.05fr] md:items-end reveal delay-3">
               <p className="max-w-[360px] text-lg leading-7 text-[#c5c8c5] md:text-xl">
-                I’m Aarav — a developer who helps thoughtful people turn messy ideas into fast, polished digital products.
+                I’m Amritpal — a developer who helps thoughtful people turn messy ideas into fast, polished digital products.
               </p>
               <div className="flex flex-wrap gap-3">
                 <AppLink href="#contact" className="acid-button" data-testid="link-start-project">
@@ -259,7 +259,7 @@ function Home() {
             <p className="mt-8 max-w-[400px] text-base leading-7 text-[#bfc4c7]">Tell me what you’re working on, what’s getting in the way, and what a good outcome looks like. I’ll get back to you within two working days.</p>
             <div className="mt-10 flex flex-col gap-4">
               <AppLink href="mailto:hello@aaravmehta.dev" className="group flex w-fit items-center gap-3 text-[#f4f0e6] transition-colors hover:text-[#d8ef67]" data-testid="link-email"><Mail size={16} /> <span className="border-b border-[#59667e] pb-1 font-mono text-xs">hello@aaravmehta.dev</span> <ArrowUpRight size={14} className="transition-transform group-hover:-translate-y-1 group-hover:translate-x-1" /></AppLink>
-              <AppLink href="https://www.linkedin.com" className="group flex w-fit items-center gap-3 text-[#f4f0e6] transition-colors hover:text-[#d8ef67]" data-testid="link-linkedin"><Linkedin size={16} /> <span className="border-b border-[#59667e] pb-1 font-mono text-xs">LinkedIn / Aarav</span> <ArrowUpRight size={14} className="transition-transform group-hover:-translate-y-1 group-hover:translate-x-1" /></AppLink>
+              <AppLink href="https://www.linkedin.com" className="group flex w-fit items-center gap-3 text-[#f4f0e6] transition-colors hover:text-[#d8ef67]" data-testid="link-linkedin"><Linkedin size={16} /> <span className="border-b border-[#59667e] pb-1 font-mono text-xs">LinkedIn / Amritpal</span> <ArrowUpRight size={14} className="transition-transform group-hover:-translate-y-1 group-hover:translate-x-1" /></AppLink>
             </div>
           </div>
           <form onSubmit={submitInquiry} className="reveal delay-1" data-testid="form-inquiry">
@@ -277,7 +277,7 @@ function Home() {
 
       <footer className="ink-panel border-t border-[#33405c] px-5 pb-8 pt-7 md:px-10">
         <div className="mx-auto flex max-w-[1240px] flex-col gap-5 md:flex-row md:items-center md:justify-between">
-          <div className="flex items-center gap-3"><span className="hero-marker" /><span className="mono text-[10px] uppercase tracking-[.13em] text-[#a8b0b7]">Aarav Mehta · Full-stack developer</span></div>
+          <div className="flex items-center gap-3"><span className="hero-marker" /><span className="mono text-[10px] uppercase tracking-[.13em] text-[#a8b0b7]">Amritpal Singh · Full-stack developer</span></div>
           <div className="flex items-center gap-5 text-[#a8b0b7]"><AppLink href="https://github.com" className="transition-colors hover:text-[#d8ef67]" data-testid="link-github"><Github size={16} /></AppLink><AppLink href="mailto:hello@aaravmehta.dev" className="transition-colors hover:text-[#d8ef67]" data-testid="link-footer-email"><MessageCircle size={16} /></AppLink><span className="mono text-[10px]">© 2024—25</span></div>
         </div>
       </footer>
