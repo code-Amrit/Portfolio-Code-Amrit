@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Freelance Full-Stack Portfolio"
+description = "A polished portfolio website for a full-stack web and app developer, designed to attract freelance clients with a clear positioning, selected work, services, and contact flow."
+version = "1.0.0"
+id = "artifacts/freelance-portfolio"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 21978
+
+[services.development]
+run = "pnpm --filter @workspace/freelance-portfolio run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/freelance-portfolio", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/freelance-portfolio/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "21978"
+BASE_PATH = "/"
